@@ -98,13 +98,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>KK FUNDA Releases Nexus Repository</name>
-	      <url>http://52.66.197.249:8081/repository/vi-Release/</url>
+	      <url>http://43.205.203.71:8081/repository/vi-Release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>KK FUNDA Snapshot Nexus Repository </name>
-	      <url>http://52.66.197.249:8081/repository/vi-snapshot/</url>
+	      <url>http://43.205.203.71:8081/repository/vi-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
