@@ -4,12 +4,13 @@ node
 	
 def mHome = tool name: "maven-3.9.9"	
 
-	stage('checkOut')
+	try(
+		stage('checkOut')
 	{
 	git branch: 'main', credentialsId: '8c2c1a63-e761-4348-89d0-62358b05f0a8', url: 'https://github.com/hotel09/maven-web-app-project-kk-funda.git'
 	}
 
-	try(
+	
 	stage('Build')
 	{
 	sh "${mHome}/bin/mvn clean package"
