@@ -46,7 +46,7 @@ node
 }
 
 
-	def notifyBuild(string buildStatus='STARTED'){
+	def notifyBuild(String buildStatus='STARTED'){
 	//buildstatus is null means successfull
 	buildStatus = buildStatus ?: 'SUCCESS'	
 
