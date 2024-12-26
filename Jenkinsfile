@@ -2,7 +2,7 @@ node
 {
 	properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '5', artifactNumToKeepStr: '5', daysToKeepStr: '5', numToKeepStr: '5'))])
 	
-def mHome = tool name: "maven-3.9.9"	
+
 
 	try{
 		stage('checkOut')
@@ -10,7 +10,7 @@ def mHome = tool name: "maven-3.9.9"
 	git branch: 'main', credentialsId: '8c2c1a63-e761-4348-89d0-62358b05f0a8', url: 'https://github.com/hotel09/maven-web-app-project-kk-funda.git'
 	}
 
-	
+	def mHome = tool name: "maven-3.9.9"	
 	stage('Build')
 	{
 	sh "${mHome}/bin/mvn clean package"
