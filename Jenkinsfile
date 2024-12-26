@@ -9,7 +9,7 @@ pipeline {
 	    
 	stage('checkOut'){
 	steps{
-	git branch: 'dev', credentialsId: '8c2c1a63-e761-4348-89d0-62358b05f0a8', url: 'https://github.com/hotel09/maven-web-app-project-kk-funda.git'
+	git branch: 'sit', credentialsId: '8c2c1a63-e761-4348-89d0-62358b05f0a8', url: 'https://github.com/hotel09/maven-web-app-project-kk-funda.git'
 
 	}
 	}
