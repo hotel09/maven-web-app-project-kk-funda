@@ -70,7 +70,7 @@ notifyBuild('STARTED')
 
 //send slack notification 
 
-	slackSend(color:colorCode, message:summary, channel:script-dev)
+	slackSend(color:colorCode, message:summary, channel: '#script-dev')
 
 
 }
