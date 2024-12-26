@@ -3,9 +3,8 @@ node
 	properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '5', artifactNumToKeepStr: '5', daysToKeepStr: '5', numToKeepStr: '5'))])
 	
 
-
+notifyBuild('STARTED')
 	try{
-		notifyBuild('STARTED')
 		stage('checkOut')
 	{
 	git branch: 'main', credentialsId: '8c2c1a63-e761-4348-89d0-62358b05f0a8', url: 'https://github.com/hotel09/maven-web-app-project-kk-funda.git'
